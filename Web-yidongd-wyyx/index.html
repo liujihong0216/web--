@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<!--1.布局视口改为理想视口-->
+		<meta name="viewport" content="width=device-width, .user-scalable=no, initial-scal=1.0, maximum-scale=1.0,minimum-scale=1.0" />
+		<!--2.利用js动态的改变不同手机端的font-size的值-->
+		<script src="js/lib-flex.js"></script>
+		<title></title>
+		<link rel="stylesheet" href="plugin/bootstrap.min.css" />
+		<link rel="stylesheet" href="dist/css/swiper.min.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<style>
+			html {
+				font-size: 0.16rem;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="wrap">
+
+			<div class="nav">
+				<header class="my-header">
+					<div class="my-header-div">
+						<div class="my-header-div1">
+							<p>网易严选</p>
+						</div>
+						<div class="my-header-div2">
+							<div class="my-header-div2-div">
+								<p class="my-header-div2-div-p"></p>
+								<p class="my-header-div2-div-p1">搜索商品，共22002件商品</p>
+							</div>
+						</div>
+						<div class="my-header-div3">
+							<input class="my-header-div3-input" type="submit" value="登陆" />
+						</div>
+					</div>
+				</header>
+				<div class="my-div1">
+					<div class="my-div1-divv">
+						<div class="my-divv">
+							<div class="my-divvv">
+								<div class="my-div1-div swiper-slide">
+									<p class="my-div1-p1">推荐</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p>居家生活</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p> 服饰鞋包</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p>美食酒水</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p>个护清洁</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p>母婴亲子</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p>运动旅行</p>
+								</div>
+								<div class="my-div1-div swiper-slide">
+									<p>数码家电</p>
+								</div>
+								<div class="swiper-slide my-div1-div ">
+									<p>全球特色</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="my-div1-divv2">
+						<img src="img/三角形(1).png" />
+					</div>
+				</div>
+				<div class="my-hide" style="display: none;">
+					<div class="my-hide1">
+						<div class="my-hide1-div1">
+							<div class="my-hide1-div1-div1"><span> 全部频道</span></div>
+							<div class="my-hide1-div1-div2"></div>
+						</div>
+						<div class="my-hide1-div2">
+							<div class="my-hide1-div2-div my-hide1-reset1">推荐</div>
+							<div class="my-hide1-div2-div ">居家生活</div>
+							<div class="my-hide1-div2-div ">服饰鞋包</div>
+							<div class="my-hide1-div2-div">美食酒水</div>
+						</div>
+						<div class="my-hide1-div2">
+							<div class="my-hide1-div2-div">个护清洁</div>
+							<div class="my-hide1-div2-div">母婴亲子</div>
+							<div class="my-hide1-div2-div">运动旅行</div>
+							<div class="my-hide1-div2-div">数码家电</div>
+						</div>
+						<div class="my-hide1-div2">
+							<div class="my-hide1-div2-div">全球特色</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="my-width">
+				<!--轮播图-->
+				<div class="lunbotu">
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide"><img src="img/309378dde155b8eda644c4b392a2ef11.jpg" /> </div>
+							<div class="swiper-slide"><img src="img/7342303ac70716856c2862ebf377667d.jpg" /></div>
+							<div class="swiper-slide"><img src="img/8ceaa8053baf2056334e166493e9eaab.jpg" /></div>
+							<div class="swiper-slide"><img src="img/9e38d79e8a381812cb1937aa18301a9e.jpg" /> </div>
+							<div class="swiper-slide"><img src="img/e217e691e3ca76e8a0b6859ca632a920.jpg" /></div>
+							<div class="swiper-slide"><img src="img/ea5fde8d19b12c0e252365e713520cd6.jpg" /></div>
+							<div class="swiper-slide"><img src="img/f00ff1a6f9e244efe43c77ee8331318f.jpg" /></div>
+							<div class="swiper-slide"><img src="img/fa67f57fe6a7fcd755b170ee6c240462.jpg" /></div>
+						</div>
+						<!-- 分液器 -->
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+
+				<div class="my-div2">
+					<div class="my-div2-div">
+						<span class="my-div2-p1"><img src="img/a03dd909803b9ac032eba58b7253a2f6.png" /></span>
+						<span class="my-div2-p">网易自营品牌</span>
+					</div>
+					<div class="my-div2-div">
+						<span class="my-div2-p1"><img src="img/2d0402ffcd52b3ec3b07422681c42a89.png" /></span>
+						<span class="my-div2-p">30天无忧退货</span>
+					</div>
+					<div class="my-div2-div">
+						<span class="my-div2-p1"><img src="img/eb61ee48e8942dbd1784c9ee75ebe955.png" /></span>
+						<span class="my-div2-p">48小时快速退款</span>
+					</div>
+				</div>
+
+				<div class="my-div3">
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/fede8b110c502ec5799702d5ec824792.png" /> </span>
+						<span class="my-div3-span2">居家生活</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/fb9dde0c1593536c18c8e12b6f49eb17.png" /> </span>
+						<span class="my-div3-span2">服饰鞋包</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/d916591adea776351e084016335e5820.png" /> </span>
+						<span class="my-div3-span2">美食酒水</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/6c3bd9d885c818b1f73e497335a68b47.png" /> </span>
+						<span class="my-div3-span2">个护清洁</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/63682bd2df06963251b2715e20f98a75.png" /> </span>
+						<span class="my-div3-span2">限时购</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/559d2a240ec20b096590a902217009ff.png" /> </span>
+						<span class="my-div3-span2">母婴亲子</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/5c088559ebcc3f0ffcda663f04dfbeb2.png" /> </span>
+						<span class="my-div3-span2">运动旅游</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/fbca8e1f2948f0c09fc7672c2c125384.png" /> </span>
+						<span class="my-div3-span2">数码家电</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/e83bd330713b66a8d4e8eb0cefed8996.png" /> </span>
+						<span class="my-div3-span2">全球特色</span>
+					</div>
+					<div class="my-div3-div">
+						<span class="my-div3-span1"><img src="img/51f5a91f10ba745ec68340b98315acf5.png" /> </span>
+						<span class="my-div3-span2">超级会员</span>
+					</div>
+				</div>
+
+				<!--新人专享礼-->
+				<div class="my-div4">
+					<div class="my-div4-div1">
+						<span>- 新人专享礼 -</span>
+					</div>
+					<div class="my-div4-div2">
+						<div class="my-div4-div2-div1 my-div4-reset1">
+							<span class="my-div4-div2-span1">新人专享礼包</span>
+							<span class="my-div4-div2-span2"><img src="img/ba4d635ec94ad95b28bfab6500900659.png" /> </span>
+						</div>
+						<div class="my-div4-div2-div1">
+							<div class="my-div4-div2-div1-div1 my-div4-reset2">
+								<div class="my-div4-reset2-div1">
+									<span class="my-div4-reset2-div1-span1">福利社</span>
+									<span class="my-div4-reset2-div1-span2">今日特价</span>
+									<span class="my-div4-reset2-div1-span3">
+									<p class="my-div4-p1">¥749</p>
+									<p class="my-div4-p2">¥999</p>
+								</span>
+								</div>
+								<div class="my-div4-reset2-div2">
+									<span class="my-div4-reset2-div2-span"><img src="img/034f5185768725d69e2660f736d81cb8.png" /> </span>
+								</div>
+							</div>
+							<div class="my-div4-div2-div1-div1 my-div4-reset3">
+								<div class="my-div4-reset2-div1">
+									<span class="my-div4-reset2-div1-span1">新人拼团</span>
+									<span class="my-div4-reset2-div1-span22">1元起包邮</span>
+									<span class="my-div4-reset2-div1-span3">
+									<p class="my-div4-p1">¥1</p>
+									<p class="my-div4-p2">¥19.9</p>
+								</span>
+								</div>
+								<div class="my-div4-reset2-div2">
+									<span class="my-div4-reset2-div2-span"><img src="img/811f871250fcaee12fd620e847c8dbf4.png" /> </span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--品牌制造商-->
+				<div class="my-div5">
+					<div class="my-div5-div1">
+						<span class="my-div5-span1">品牌制造商直供</span>
+						<span class="my-div5-span2">更多  ></span>
+					</div>
+					<div class="my-div5-div2">
+						<div class="my-div5-div2-div my-div5-reset">
+							<div class="my-div5-div2-div-div1">海外制造商</div>
+							<div class="my-div5-div2-div-div2">
+								<span class="my-div5-div2-div-div2-span1">
+								<p>9.9元起</p>
+							</span>
+								<span class="my-div5-div2-div-div2-span2">
+								<p>上新</p>
+							</span>
+							</div>
+						</div>
+						<div class="my-div5-div2-div my-div5-reset1">
+							<div class="my-div5-div2-div-div1">CK制造商</div>
+							<div class="my-div5-div2-div-div2">
+								<span class="my-div5-div2-div-div2-span1">
+								<p>32.9元起</p>
+							</span>
+								<span class="my-div5-div2-div-div2-span2">
+								<p>上新</p>
+							</span>
+							</div>
+						</div>
+						<div class="my-div5-div2-div my-div5-reset2">
+							<div class="my-div5-div2-div-div1">新秀丽制造商</div>
+							<div class="my-div5-div2-div-div2">
+								<span class="my-div5-div2-div-div2-spann">
+								<p>34.9元起</p>
+							</span>
+							</div>
+						</div>
+						<div class="my-div5-div2-div my-div5-reset3">
+							<div class="my-div5-div2-div-div1">Nine West制造商</div>
+							<div class="my-div5-div2-div-div2">
+								<span class="my-div5-div2-div-div2-spann">
+								<p>219元起</p>
+							</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--类目热销榜-->
+				<div class="my-div6">
+					<div class="my-div5-div1">
+						<span class="my-div5-span1">类目热销榜</span>
+						<span class="my-div5-span2"></span>
+					</div>
+					<div class="my-div6-div">
+						<div class="my-div6-div-div1">
+							<div class="my-div6-div-div1-div my-div6-reset1">
+								<div class="my-div6-div-div1-div-div1">
+									<span class="my-div6-span1">热销榜</span>
+									<span class="my-div6-span2"></span>
+								</div>
+								<div class="my-div6-div-div1-div-div2">
+									<img src="img/59eb7e52ab114c894a8179bc2991122b.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div1-div my-div6-reset2">
+								<div class="my-div6-div-div1-div-div1">
+									<span class="my-div6-span1">好评榜</span>
+									<span class="my-div6-span2"></span>
+								</div>
+								<div class="my-div6-div-div1-div-div2">
+									<img src="img/bc4c9c2f4139efe0e4ab9cb2796c74cf.png" />
+								</div>
+							</div>
+						</div>
+						<div class="my-div6-div-div2">
+							<div class="my-div6-div-div2-div">
+								<div class="my-div6-div-div2-div-div1">居家生活榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/c0b3d87a8066b33c68294ce60f8e1920.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">服饰鞋包</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/02a3d6334a8a58c1df4f3e55ddbee051.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">数码家电榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/cf86ce7b36cc90f5c9b1cbbc5eafd737.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">美食酒水榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/1c00ef4aea552b2eb5390d131ac7af24.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">个护清洁榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/9cdbc447b453e890e8fb3f59c41d9fbb.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">母婴亲子榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/873505d4b94744861ba243e321868530.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">运动旅游榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/d84c728c164a77a8c5f0ca153d21fe69.png" />
+								</div>
+							</div>
+							<div class="my-div6-div-div2-div">
+
+								<div class="my-div6-div-div2-div-div1">全球特色榜</div>
+								<div class="my-div6-div-div2-div-div2">
+									<img src="img/bbd83d44d6d8fc61031256143ad37c93.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--<人气推荐-->
+				<div class="my-div7">
+					<div class="my-div5-div1">
+						<span class="my-div5-span1">人气推荐</span>
+						<span class="my-div5-span2">更多  ></span>
+					</div>
+					<div class="my-div7-div">
+						<div class="my-div7-div-div1">
+							<img src="img/9a33f08a3b0f5c06fdf4c586d51b2f7c.png" />
+						</div>
+						<div class="my-div7-div-div2">
+							<div class="my-div7-div-div2-div">
+								<span class="my-div7-span1">爆品</span>
+								<span class="my-div7-span2">换新季特惠</span>
+							</div>
+							<div class="my-div7-div-div2-div1">全棉针织纹四件套 新款</div>
+							<div class="my-div7-div-div2-div2">超软针织棉， 亲肤可裸睡</div>
+							<div class="my-div7-div-div2-div3">¥254</div>
+						</div>
+					</div>
+					<div class="my-div7-div1">
+						<div class="my-div7-div1-div">
+							<div class="my-div7-div1-div-div1 my-div7-reset1">
+								<div class="my-div7-div1-div-div1-div">泰国制造</div>
+							</div>
+							<div class="my-div7-div1-div-div2">泰国制造 天然乳胶</div>
+							<div class="my-div7-div1-div-div3">
+								<span class="my-div7-div1-div-div3-span">枕  护颈..</span>
+								<span class="my-div7-div1-div-div3-span1">¥199</span>
+							</div>
+							<div class="my-div7-div1-div-div4">每满299减60</div>
+						</div>
+						<div class="my-div7-div1-div">
+							<div class="my-div7-div1-div-div1 my-div7-reset2">
+
+							</div>
+							<div class="my-div7-div1-div-div2">6包/提古风一木3层</div>
+							<div class="my-div7-div1-div-div3">
+								<span class="my-div7-div1-div-div3-span">软抽..</span>
+								<span class="my-div7-div1-div-div3-span1">¥16.9</span>
+							</div>
+							<div class="my-div7-div1-div-div4">每满99减10券</div>
+						</div>
+						<div class="my-div7-div1-div ">
+							<div class="my-div7-div1-div-div1 my-div7-reset3">
+								<div class="my-div7-div1-div-div1-div">4色可选</div>
+							</div>
+							<div class="my-div7-div1-div-div2">旷野仙踪 女士牛皮</div>
+							<div class="my-div7-div1-div-div3">
+								<span class="my-div7-div1-div-div3-span">斜挎包</span>
+								<span class="my-div7-div1-div-div3-span1">¥349</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--限时购-->
+				<div class="my-div8">
+					<div class="my-div8-div1">
+						<div class="my-div8-div1-div1">限时购</div>
+						<div class="my-div8-div1-div2">
+							<div class="my-div8-div1-div2-div1" id="botHours"></div>
+							<div class="my-div8-div1-div2-div2"><span>:</span> </div>
+							<div class="my-div8-div1-div2-div1" id="botMin"></div>
+							<div class="my-div8-div1-div2-div2"><span>: </span> </div>
+							<div class="my-div8-div1-div2-div1" id="botSecond"></div>
+						</div>
+						<div class="my-div8-div1-div3">更多 > </div>
+					</div>
+					<div class="my-div8-div2">
+						<div class="my-div2-div2-div">
+							<div class="my-div2-div2-div-div1 my-div8-reset1"></div>
+							<div class="my-div2-div2-div-div2">
+								<div class="my-div2-div2-div-div2-div1">¥399</div>
+								<div class="my-div2-div2-div-div2-div2">¥400</div>
+							</div>
+						</div>
+						<div class="my-div2-div2-div">
+							<div class="my-div2-div2-div-div1 my-div8-reset2"></div>
+							<div class="my-div2-div2-div-div2">
+								<div class="my-div2-div2-div-div2-div1">¥1119</div>
+								<div class="my-div2-div2-div-div2-div2">¥1300</div>
+							</div>
+						</div>
+						<div class="my-div2-div2-div">
+							<div class="my-div2-div2-div-div1 my-div8-reset3"></div>
+							<div class="my-div2-div2-div-div2">
+								<div class="my-div2-div2-div-div2-div1">¥679</div>
+								<div class="my-div2-div2-div-div2-div2">¥700</div>
+							</div>
+						</div>
+						<div class="my-div2-div2-div">
+							<div class="my-div2-div2-div-div1 my-div8-reset4"></div>
+							<div class="my-div2-div2-div-div2">
+								<div class="my-div2-div2-div-div2-div1">¥109</div>
+								<div class="my-div2-div2-div-div2-div2">¥120</div>
+							</div>
+						</div>
+						<div class="my-div2-div2-div">
+							<div class="my-div2-div2-div-div1 my-div8-reset5"></div>
+							<div class="my-div2-div2-div-div2">
+								<div class="my-div2-div2-div-div2-div1">¥218</div>
+								<div class="my-div2-div2-div-div2-div2">¥268</div>
+							</div>
+						</div>
+						<div class="my-div2-div2-div">
+							<div class="my-div2-div2-div-div1 my-div8-reset6"></div>
+							<div class="my-div2-div2-div-div2">
+								<div class="my-div2-div2-div-div2-div1">¥79</div>
+								<div class="my-div2-div2-div-div2-div2">¥90</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="my-div9">
+					<div class="my-div9-div">
+						<div class="my-div9-div-div">
+							<div class="my-div9-div-div-div1">春茶尝鲜季</div>
+							<div class="my-div9-div-div-div2">预售好价75折</div>
+							<div class="my-div9-div-div-div3">
+								<div class="my-div9-div-div-div3-div my-div9-reset1"></div>
+								<div class="my-div9-div-div-div3-div my-div9-reset2"></div>
+							</div>
+						</div>
+						<div class="my-div9-div-div">
+							<div class="my-div9-div-div-div1">早春添新鞋</div>
+							<div class="my-div9-div-div-div2">休闲鞋/高跟鞋/等等</div>
+							<div class="my-div9-div-div-div3">
+								<div class="my-div9-div-div-div3-div my-div9-reset3"></div>
+								<div class="my-div9-div-div-div3-div my-div9-reset4"></div>
+							</div>
+						</div>
+						<div class="my-div9-div-div">
+							<div class="my-div9-div-div-div1">春季包包大众草</div>
+							<div class="my-div9-div-div-div2">复古桶包/双肩包89元起</div>
+							<div class="my-div9-div-div-div3">
+								<div class="my-div9-div-div-div3-div my-div9-reset5"></div>
+								<div class="my-div9-div-div-div3-div my-div9-reset6"></div>
+							</div>
+						</div>
+						<div class="my-div9-div-div">
+							<div class="my-div9-div-div-div1">按摩神器打赏</div>
+							<div class="my-div9-div-div-div2">仿真人手按摩</div>
+							<div class="my-div9-div-div-div3">
+								<div class="my-div9-div-div-div3-div my-div9-reset7"></div>
+								<div class="my-div9-div-div-div3-div my-div9-reset8"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--左滑-->
+				<div class="my-div10">
+					<div class="my-div10-div1"></div>
+					<div class="my-div10-div2">
+						<div class="bigder">
+							<div class="big">
+								<div class="swiper-slide swiper-slide2 swiper-slide3">
+									<div class="swiper-slide2-div my-div10-reset"></div>
+									<div class="swiper-slide2-div1">古宛天香2019明前特级西湖龙井...</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥988</div>
+										<div class="swiper-slide2-div2-div2">¥1288</div>
+									</div>
+									<div class="swiper-slide2-div3">新茶尝鲜</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset1"></div>
+									<div class="swiper-slide2-div1">网易自造T300无线吸尘器</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥1599</div>
+										<!--<div class="swiper-slide2-div2-div2"></div>-->
+									</div>
+									<!--<div class="swiper-slide2-div3"></div>-->
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset2">
+										<div class="swiper-slide2-div-div">日本制造</div>
+									</div>
+									<div class="swiper-slide2-div1">日本制造 霄平锅</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥988</div>
+										<!--<div class="swiper-slide2-div2-div2">¥1288</div>-->
+									</div>
+									<div class="swiper-slide2-div3">每满149减15劵</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset3"></div>
+									<div class="swiper-slide2-div1">AB面独立立体弹簧床垫进口乳胶</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥2599</div>
+										<!--<div class="swiper-slide2-div2-div2">¥1288</div>-->
+									</div>
+									<div class="swiper-slide2-div3">爆品</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset4">
+										<div class="swiper-slide2-div-div">日本制造</div>
+									</div>
+									<div class="swiper-slide2-div1">日本制造 天然草本睡眠足贴</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥69</div>
+										<!--<div class="swiper-slide2-div2-div2">¥1288</div>-->
+									</div>
+									<div class="swiper-slide2-div3">每满169减25劵</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset5">
+										<!--<div class="swiper-slide2-div-div">日本制造</div>-->
+									</div>
+									<div class="swiper-slide2-div1">网易自造N520除螨吸尘器</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥449</div>
+										<div class="swiper-slide2-div2-div2">¥499</div>
+									</div>
+									<div class="swiper-slide2-div3">爆品</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset6">
+										<!--<div class="swiper-slide2-div-div">日本制造</div>-->
+									</div>
+									<div class="swiper-slide2-div1">水胶体创可贴</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥19.9</div>
+										<!--<div class="swiper-slide2-div2-div2">¥1288</div>-->
+									</div>
+									<div class="swiper-slide2-div3">每满169减25劵</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div my-div10-reset7">
+										<div class="swiper-slide2-div-div">美国制造</div>
+									</div>
+									<div class="swiper-slide2-div1">美国制造 除甲醛空气净化剂227g</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥45</div>
+										<!--<div class="swiper-slide2-div2-div2">¥1288</div>-->
+									</div>
+									<div class="swiper-slide2-div3">爆品</div>
+								</div>
+								<div class="swiper-slide swiper-slide2 ">
+									<div class="swiper-slide2-div my-div10-reset8">
+										<div class="swiper-slide2-div-div">3色可选</div>
+									</div>
+									<div class="swiper-slide2-div1">可裸睡纯棉便携水袋</div>
+									<div class="swiper-slide2-div2">
+										<div class="swiper-slide2-div2-div1">¥129</div>
+										<!--<div class="swiper-slide2-div2-div2">¥1288</div>-->
+									</div>
+									<div class="swiper-slide2-div3">每满169减20劵</div>
+								</div>
+								<div class="swiper-slide swiper-slide2">
+									<div class="swiper-slide2-div swiper-slide4">查看更多 ></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--底部-->
+				<div class="my-div11">
+					<div class="my-div11-div1">
+						<div class="my-div11-div1-div">下载APP</div>
+						<div class="my-div11-div1-div">电脑版</div>
+					</div>
+					<div class="my-div11-div2">网易公司版权所有 © 1997-2019</div>
+					<div class="my-div11-div2">食品经营许可证： JY13301080111719</div>
+				</div>
+
+			</div>
+
+			<div class="end">
+				<div class="end-div1">
+					<div class="end-div1-div1 end-small1"></div>
+					<div class="end-div1-div2 my-end-reset1">首页</div>
+				</div>
+				<div class="end-div1">
+					<div class="end-div1-div1 end-small2"></div>
+					<div class="end-div1-div2 my-end-reset">分类</div>
+				</div>
+				<div class="end-div1">
+					<div class="end-div1-div1 end-small3"></div>
+					<div class="end-div1-div2 my-end-reset">识物</div>
+				</div>
+				<div class="end-div1">
+					<div class="end-div1-div1 end-small4"></div>
+					<div class="end-div1-div2 my-end-reset">购物车</div>
+				</div>
+				<div class="end-div1">
+					<div class="end-div1-div1 end-small5"></div>
+					<div class="end-div1-div2 my-end-reset">个人</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="my-right"></div>
+		<div class="my-top" style="display: none;"></div>
+
+	</body>
+	<script type="text/javascript" src="plugin/jquery-1.12.4.js"></script>
+	<script type="text/javascript" src="js/lib-flex.js"></script>
+	<script type="text/javascript" src="dist/js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/Time.js" ></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</html>
